@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+import "google/type/money.proto";
+//import "google/protobuf/empty.proto";
+
+message Order {
+    string order_id = 1;
+    google.type.Money price = 2;
+    //google.protobuf.Empty emptyTest = 3;
+}
+
