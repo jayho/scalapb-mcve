@@ -17,9 +17,6 @@ PB.protoSources in Compile += PB.externalIncludePath.value / "google" / "type"
 // we need to remove this extra path to prevent duplicate compilation.
 PB.includePaths in Compile -= PB.externalIncludePath.value / "google" / "type"
 
-// So it compiles google-apis
-PB.protoSources in Compile += PB.externalIncludePath.value
-
 libraryDependencies += "com.trueaccord.scalapb" %% "scalapb-runtime" % com.trueaccord.scalapb.compiler.Version.scalapbVersion % "protobuf"
 libraryDependencies += "com.google.api.grpc" % "googleapis-common-protos" % "0.0.3" % "protobuf"
 
